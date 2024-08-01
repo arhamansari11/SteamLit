@@ -8,7 +8,7 @@ import streamlit as st
 
 # st.write("You selected:", options)
 
-# st.link_button("Go to my PortFolio" , "https://muhammad-arham.netlify.app/")
+st.link_button("Go to my PortFolio" , "https://muhammad-arham.netlify.app/")
 
 # color = st.color_picker("Pick a Color" , "#00f900")
 # st.write("You Pick" , color )
