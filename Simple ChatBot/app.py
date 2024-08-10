@@ -3,15 +3,17 @@ import google.generativeai as genai
 
 import streamlit as st
 
-GOOGLE_API_KEY = "AIzaSyDqenQKdz1vK5lWPdyTKjVR6rcEy_A9-uQ"
+# GOOGLE_API_KEY = "AIzaSyDqenQKdz1vK5lWPdyTKjVR6rcEy_A9-uQ"
 
-genai.configure(api_key=GOOGLE_API_KEY)
+# genai.configure(api_key=GOOGLE_API_KEY)
 
 # StreamLit Tite
+st.set_page_config(page_title="Simple ChatBot", layout="centered") 
 
 st.title("✨Simple ChatBot✨")
 
-st.write("Susponsered by Gemini Api")
+st.write("Powered by Google Generative AI")
+
 
 # Model Initiate
 
@@ -24,7 +26,7 @@ def getResponseFromModel(user_input):
 
 
 with st.form(key="chat_form" , clear_on_submit=True):
-    user_input = st.text_input("Enter your query? " , max_chars=2000)
+    user_input = st.text_input("Enter your query? " )
     submit_button = st.form_submit_button("Send")
 
 
